@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Cococustom</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .project-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo Cococustom" />
+        <span>Cococustom</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Mes Réalisations</h2>
+      <div class="portfolio-grid">
+        <!-- Conteneur du projet 1 -->
+        <div class="project">
+          <!-- Lien vers le site du projet, s'ouvre dans un nouvel onglet -->
+          <a href="https://cococustom47.wixsite.com/pizzeria-es-emporter" target="_blank" style="text-decoration:none;">
+            <!-- Titre du projet -->
+            <h3 style="color:rgb(255, 255, 255)">Projet 1 : Magic Pizza</h3>
+            <!-- Description incitant à cliquer -->
+            <p style="color:rgb(191, 191, 191);">Cliquez pour visiter le site en ligne</p>
+          </a>
+          
+          <!-- Galerie d’images du projet affichée en grille 2x2 -->
+          <div class="project-gallery">
+            <!-- Première image du projet -->
+            <img src="image/photosite1.jpeg" alt="Image 1" />
+            <!-- Deuxième image du projet -->
+            <img src="image/photosite2.jpeg" alt="Image 2" />
+            <!-- Troisième image du projet -->
+            <img src="image/photosite3.jpeg" alt="Image 3" />
+          </div>
+        </div>
+        <!-- Fin du conteneur projet 1 -->
+        <div class="project">
+          <img src="https://via.placeholder.com/300x200" alt="Projet 2" style="width:100%; max-width:300px; border-radius:12px;">
+          <h3 style="margin:10px 0 0;">Projet 2 : Nom du site</h3>
+          <p style="color:gray;">Description du projet 2</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Cococustom</p>
+    </div>
+  </footer>
+</body>
+</html>
